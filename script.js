@@ -38,7 +38,7 @@ function tenHourColorChanger() {
         $("#tenHourRow").attr('class', 'present');
     }
     else {
-        $("tenHourRow").attr('class', 'future');
+        $("#tenHourRow").attr('class', 'future');
     }    
 };
 

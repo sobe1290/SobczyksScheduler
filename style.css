@@ -27,7 +27,8 @@ textarea{
 
 .time-block{
   text-align: center;
-  border-radius: 15px;
+  border-radius: 15px 0 0 15px;
+  background-color: rgb(215, 219, 219);
 }
 
 .row {
@@ -44,16 +45,16 @@ textarea{
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #b88684;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #7ca07c;
   color: white;
 }
 
@@ -61,7 +62,7 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #051214;
   color: white;
 }
 
@@ -72,7 +73,4 @@ textarea{
 
 table tr{
   height: 100px;
-}
-.hideRow {
-  opacity: 100%;
 }
