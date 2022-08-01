@@ -69,3 +69,10 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+table tr{
+  height: 100px;
+}
+.hideRow {
+  opacity: 100%;
+}
