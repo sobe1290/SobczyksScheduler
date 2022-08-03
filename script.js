@@ -141,3 +141,59 @@ function seventeenHourColorChanger() {
 };
 
 seventeenHourColorChanger();
+
+
+
+$("#keepNine").click(function () {
+    var nineEntry = $("#nineHourRow").text();
+    localStorage.setItem('nineHourRow', nineEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepTen").click(function () {
+    var tenEntry = $("#tenHourRow").text();
+    localStorage.setItem('tenHourRow', tenEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepEleven").click(function () {
+    var elevenEntry = $("#elevenHourRow").text();
+    localStorage.setItem('elevenHourRow', elevenEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepTwelve").click(function () {
+    var twelveEntry = $("#twelveHourRow").text();
+    localStorage.setItem('twelveHourRow', twelveEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepThirteen").click(function () {
+    var thirteenEntry = $("#thirteenHourRow").text();
+    localStorage.setItem('thirteenHourRow', thirteenEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepFourteen").click(function () {
+    var fourteenEntry = $("#fourteenHourRow").text();
+    localStorage.setItem('fourteenHourRow', fourteenEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepFifteen").click(function () {
+    var fifteenEntry = $("#fifteenHourRow").text();
+    localStorage.setItem('fifteenHourRow', fifteenEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepSixteen").click(function () {
+    var sixteenEntry = $("#sixteenHourRow").text();
+    localStorage.setItem('sixteenHourRow', sixteenEntry);
+    alert("Entry Saved to Local Storage");
+});
+
+$("#keepSeventeen").click(function () {
+    var seventeenEntry = $("#seventeenHourRow").text();
+    localStorage.setItem('seventeenHourRow', seventeenEntry);
+    alert("Entry Saved to Local Storage");
+});
