@@ -1,4 +1,4 @@
-
+// This section sets the global variables used for the time features
 var currentDate = $('#currentDay');
 currentDate.text(moment().format('dddd, MMMM Do YYYY'));
 
@@ -14,8 +14,21 @@ var fifteenHour = moment().set('hour', 15).format('HH');
 var sixteenHour = moment().set('hour', 16).format('HH');
 var seventeenHour = moment().set('hour', 17).format('HH');
 
+// This section loads the entries from local storage on the window loading
+window.onload = function(){    
+    $("#nineHourRow").append(localStorage.getItem('nineHourRow'));
+    $("#tenHourRow").append(localStorage.getItem('tenHourRow'));
+    $("#elevenHourRow").append(localStorage.getItem('elevenHourRow'));
+    $("#twelveHourRow").append(localStorage.getItem('twelveHourRow'));
+    $("#thirteenHourRow").append(localStorage.getItem('thirteenHourRow'));
+    $("#fourteenHourRow").append(localStorage.getItem('fourteenHourRow'));
+    $("#fifteenHourRow").append(localStorage.getItem('fifteenHourRow'));
+    $("#sixteenHourRow").append(localStorage.getItem('sixteenHourRow'));
+    $("#seventeenHourRow").append(localStorage.getItem('seventeenHourRow'));
+    
+};
 
-
+// These next sections are each of the functions to check the block against the current time and change its class accordingly.
 function nineHourColorChanger() {
     if (currentHour > nineHour) {
         $("#nineHourRow").attr('class', 'past');
@@ -142,7 +155,7 @@ function seventeenHourColorChanger() {
 
 seventeenHourColorChanger();
 
-
+// These next sections take the data that was entered into the editable table and save it into local storage once the save icon is clicked.
 
 $("#keepNine").click(function () {
     var nineEntry = $("#nineHourRow").text();
